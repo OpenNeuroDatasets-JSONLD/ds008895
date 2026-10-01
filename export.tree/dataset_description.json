@@ -1,0 +1,20 @@
+{
+    "Name": "Overt and Covert Speech EEG Dataset (TCRE and Conventional Electrodes)",
+    "BIDSVersion": "1.9.0",
+    "DatasetType": "raw",
+    "License": "CC0",
+    "Authors": [
+        "Paras Qadir Memon",
+        "Walter Besio",
+        "Charles Anderson",
+        "Shoaib Memon"
+    ],
+    "GeneratedBy": [
+        {
+            "Name": "MNE-BIDS",
+            "Version": "0.20.0",
+            "CodeURL": "https://mne.tools/mne-bids/"
+        }
+    ],
+    "DatasetDOI": "doi:10.18112/openneuro.ds008895.v1.0.0"
+}
