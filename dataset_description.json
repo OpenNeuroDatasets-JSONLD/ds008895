@@ -5,7 +5,7 @@
     "License": "CC0",
     "Authors": [
         "Paras Qadir Memon",
-	"Walter Besio",
+        "Walter Besio",
         "Charles Anderson",
         "Shoaib Memon"
     ],
@@ -15,5 +15,6 @@
             "Version": "0.20.0",
             "CodeURL": "https://mne.tools/mne-bids/"
         }
-    ]
+    ],
+    "DatasetDOI": "doi:10.18112/openneuro.ds008895.v1.0.0"
 }
