@@ -1,5 +1,5 @@
 {
-    "Name": "Overt and Covert Speech EEG Dataset (TCRE and Conventional Electrodes)",
+    "Name": "Data",
     "BIDSVersion": "1.9.0",
     "DatasetType": "raw",
     "License": "CC0",
