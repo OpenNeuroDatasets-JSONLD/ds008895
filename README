@@ -36,7 +36,7 @@ Channels
 --------
 TCRE k is recorded on channels 2k-1 and 2k:
   odd channel  (2k-1) = tripolar (TCRE Laplacian) signal
-  even channel (2k)   = emulated disc signal of the same electrode (channel name ends in "h")
+  even channel (2k)   = emulated disc signal of the same electrode
 The channel names are placeholder labels from the recording software; they do NOT give the
 electrode positions. Positions are given by the array layout below.
 
@@ -57,16 +57,19 @@ mne_bids.read_raw_bids loads them as EOG and picks="eeg" excludes them.
 
 Code
 ----
-code/make_cleaned_epochs.py (with code/channel_sets.py) generates derivatives/cleaned-epochs from the
-raw data. The analysis code of the data descriptor is available at
+code/make_cleaned_epochs.py (with code/channel_sets.py) generates derivatives/cleaned-epochs and
+code/make_resampled.py generates derivatives/resampled-500hz from the raw data.
+code/artifact_ica_ssp.py applies optional ICA or SSP artifact removal to the resampled recordings,
+separately for the TCRE and disc signals. The analysis code of the data descriptor is available at
 https://github.com/parasmemon/tcre-overt-covert-speech-eeg
+
 
 Derivatives
 -----------
-derivatives/cleaned-epochs: ready-to-use epochs (MNE .fif) of the array channels only
-(EOG channels removed): 60 Hz notch, 1-40 Hz band-pass (zero-phase FIR), epochs -0.5 to 2.5 s
-around each picture onset, baseline -0.5 to 0 s, original sampling rate, no rejection.
-100 overt and 100 covert epochs per participant. See derivatives/cleaned-epochs/README.
+derivatives/resampled-500hz: continuous recordings of all channels, including EOG, resampled to
+500 Hz (MNE .fif, polyphase resampling with anti-aliasing filter). No notch or band-pass filter
+and no rejection. See derivatives/resampled-500hz/README.
+
 
 Loading
 -------

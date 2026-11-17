@@ -10,8 +10,7 @@ Processing steps (applied to the TCRE array channels of every participant):
 4. Baseline correction using -0.5 to 0 s.
 No channels or epochs were rejected. The original sampling rate is kept.
 
-Channels: only the TCRE array channels are included. Odd-numbered channels are tripolar (TCRE Laplacian)
-signals and even-numbered channels are the co-located emulated disc signals (channel names with the "h" suffix).
+Channels: only the TCRE array channels are included. Odd-numbered channels are TCRE signals and even-numbered channels are the emulated disc signals of the same electrode.
 The EOG channels (two standard disc electrodes placed above and to the right of one eye; channels 41-42 of sub-07, sub-08, sub-09, sub-14, sub-15 and sub-16, and channels 63-64
 of sub-11, sub-12 and sub-13) are not included here; they are available, labelled as EOG, in the raw data.
 Electrodes per array (F4/P6/F3/P5): 5/5/5/5 (40 channels), 7/7/7/7 (56), 8/8/8/8 (64), and 8/7/8/8 (62 channels;
