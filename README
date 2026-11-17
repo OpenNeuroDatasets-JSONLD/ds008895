@@ -75,8 +75,7 @@ and no rejection. See derivatives/resampled-500hz/README.
 Loading
 -------
   from mne_bids import BIDSPath, read_raw_bids
-  raw = read_raw_bids(BIDSPath(subject="01", task="OvertCovert", run="01",
-                               datatype="eeg", root="."))
+  raw = read_raw_bids(BIDSPath(subject="01", task="OvertCovert", datatype="eeg", root="."))
   import mne
   epochs = mne.read_epochs("derivatives/cleaned-epochs/sub-01/eeg/sub-01_task-OvertCovert_desc-cleaned_epo.fif")
 
